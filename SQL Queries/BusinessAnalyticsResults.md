@@ -2,18 +2,18 @@
 
 # 1. Does seat belt use affect the number of road accident casualties?
 
-Analyze the data on casualties and determine whether seat belt 
-use reduces the severity of accidents. For each safety equipment category, calculate:
-- the number of people involved in accidents
-- the total number of injuries
-- the total number of fatalities
-- the percentage of injuries
-- the percentage of fatalities
+**Analyze the data on casualties and determine whether seat belt 
+use reduces the severity of accidents. For each safety equipment category, calculate:**
+**- the number of people involved in accidents**
+**- the total number of injuries**
+**- the total number of fatalities**
+**- the percentage of injuries**
+**- the percentage of fatalities** 
 
-Then compare the results between:
-- the use of seat belts
-- the lack of seat belt use
-Finally, indicate in which cases the lack of seat belt use most increases the risk of death in an accident.
+**Then compare the results between:**
+**- the use of seat belts**
+**- the lack of seat belt use
+Finally, indicate in which cases the lack of seat belt use most increases the risk of death in an accident.**
 
 WITH Safety_Stats AS (SELECT
 	COUNT(*) AS Participant,
@@ -41,7 +41,7 @@ FROM Safety_Stats;
 ________________________________________
 
 
-#2. Which days of the week have the highest number of accidents and how their ranking changes from year to year#
+# 2. Which days of the week have the highest number of accidents and how their ranking changes from year to year
 
 SELECT
 year,
@@ -62,12 +62,9 @@ ORDER BY year desc;
 
 <img width="352" height="411" alt="image" src="https://github.com/user-attachments/assets/4575de35-87d8-4a10-bb28-f3be87369892" />
 
+________________________________________
 
-
-
-
-
-**3. What are the top 3 times of day with the highest number of injuries and how has their ranking changed over time?**
+# 3. What are the top 3 times of day with the highest number of injuries and how has their ranking changed over time?
 
 
 WITH TOP3_whole_range AS (
@@ -125,14 +122,13 @@ CASE
 END AS rank_diff
 FROM Prev_period;
 
+
 <img width="496" height="415" alt="image" src="https://github.com/user-attachments/assets/855ded92-4e24-464c-9709-25539903ef31" />
 
+________________________________________
 
 
-
-
-
-**4.Which time of day and day of the week combinations are most dangerous in terms of the number of injuries?**
+# 4.Which time of day and day of the week combinations are most dangerous in terms of the number of injuries?
 
 
 WITH SUMIK AS (SELECT 
@@ -156,12 +152,10 @@ WHERE Ranks <=3;
 
 <img width="252" height="91" alt="image" src="https://github.com/user-attachments/assets/59655609-045d-42ff-95a6-47e9e9b46c84" />
 
+________________________________________
 
 
-
-
-
-**5.Which vehicle types are most often involved in accidents resulting in death or serious injury?**
+# 5.Which vehicle types are most often involved in accidents resulting in death or serious injury?
 
 
 WITH Agregate AS (SELECT
@@ -187,10 +181,10 @@ SELECT
 <img width="352" height="341" alt="image" src="https://github.com/user-attachments/assets/13782049-b6af-4e00-a3b5-dca1335aaef9" />
 
 
+________________________________________
 
 
-
-**6. Which party roles (driver, passenger, pedestrian) have the highest number of injured or killed in accidents?**
+# 6. Which party roles (driver, passenger, pedestrian) have the highest number of injured or killed in accidents?
 
 WITH TopTotalInjuredPart AS (
 SELECT 
@@ -231,9 +225,9 @@ FROM TopTotalInjuredPart;
 <img width="293" height="68" alt="image" src="https://github.com/user-attachments/assets/a0aa46fe-5436-40e9-97fb-b0ea1ddb070d" />
 
 
+________________________________________
 
-
-**7. Which 10 specific dates had the highest number of accidents throughout the period analyzed?**
+# 7. Which 10 specific dates had the highest number of accidents throughout the period analyzed?
 
 SELECT
 	COUNT(DISTINCT dc.case_id_pkey) AS Total_Accidents,
@@ -248,9 +242,9 @@ LIMIT 10;
 <img width="237" height="242" alt="image" src="https://github.com/user-attachments/assets/e46af1f1-977d-4f68-9a70-e08e621aa646" />
 
 
+________________________________________
 
-
-**8.How has the number of accidents involving drunk drivers changed over time?**
+# 8.How has the number of accidents involving drunk drivers changed over time?
 
 WITH New_Sobriety AS (SELECT 
 	case_id_pkey,
@@ -273,9 +267,9 @@ ORDER BY dc.Year_Of_Crash DESC;
 
 <img width="403" height="371" alt="image" src="https://github.com/user-attachments/assets/37573883-7926-45a4-8f56-87906848b056" />
 
+________________________________________
 
-/**9.How many people were injured and how many died in accidents involving drunk drivers?Also provide the percentage of injured 
-and killed victims in this group. Additionally, compare this to drivers who were sober.**/
+# 9.How many people were injured and how many died in accidents involving drunk drivers?Also provide the percentage of injured and killed victims in this group. Additionally, compare this to drivers who were sober.
 
 WITH New_Sobriety AS (SELECT 
 	party_id,
@@ -323,12 +317,14 @@ FROM Killed_Injured_NotDrinking;
 
 <img width="573" height="67" alt="image" src="https://github.com/user-attachments/assets/96d640ab-a2e4-4f05-b221-b238e8a42138" />
 
-/**10.For each type of collision (e.g., rear-end, head-on, side-swipe, etc.), calculate:
-- The number of accidents,
-- The total number of injuries,
-- The total number of fatalities,
-- The average number of casualties per accident.
-Finally, list the three types of collisions with the highest average number of casualties.**/
+________________________________________
+
+# 10.For each type of collision (e.g., rear-end, head-on, side-swipe, etc.), calculate: 
+# - The number of accidents,
+# - The total number of injuries,
+# - The total number of fatalities,
+# - The average number of casualties per accident.
+# Finally, list the three types of collisions with the highest average number of casualties.
 
 SELECT 
 	type_of_collision,
@@ -372,13 +368,14 @@ ORDER BY avg_victims_per_crash DESC
 LIMIT 3;
 
 <img width="612" height="93" alt="image" src="https://github.com/user-attachments/assets/d4914c79-b1b2-4ba6-a8d3-3774a2911ab2" />
+________________________________________
 
-/**11. Do younger drivers cause accidents with more victims?
-Divide drivers into age groups (e.g., <25, 25–40, 41–60, 60+) and check:
-- How many accidents occurred in each group,
-- How many total injuries and fatalities there were,
-- What was the average number of victims per accident in each group.
-Additionally, check whether the results differ between: male drivers and female drivers.**/
+
+# 11. Do younger drivers cause accidents with more victims? Divide drivers into age groups (e.g., <25, 25–40, 41–60, 60+) and check:
+**- How many accidents occurred in each group,**
+**- How many total injuries and fatalities there were,**
+**- What was the average number of victims per accident in each group.
+Additionally, check whether the results differ between: male drivers and female drivers.**
 
 WITH victims_per_crash AS (
     SELECT
