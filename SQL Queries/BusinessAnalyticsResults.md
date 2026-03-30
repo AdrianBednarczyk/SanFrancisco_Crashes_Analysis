@@ -37,11 +37,10 @@ FROM Safety_Stats;
 <img width="292" height="57" alt="image" src="https://github.com/user-attachments/assets/e15e0623-4319-4b74-9f1a-caafb6298205" />
 
 
+________________________________________
 
 
-
-
-**2. Which days of the week have the highest number of accidents and how their ranking changes from year to year**
+#2. Which days of the week have the highest number of accidents and how their ranking changes from year to year#
 
 SELECT
 year,
