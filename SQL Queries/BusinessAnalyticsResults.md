@@ -42,7 +42,7 @@ SELECT * FROM Safety_Stats;
 ________________________________________
 
 
-# 2. Which days of the week have the highest number of accidents and how their ranking changes from year to year
+## 2. Which days of the week have the highest number of accidents and how their ranking changes from year to year
 
 ```sql
 SELECT
@@ -66,7 +66,7 @@ ORDER BY year desc;
 
 ________________________________________
 
-# 3. What are the top 3 times of day with the highest number of injuries and how has their ranking changed over time?
+## 3. What are the top 3 times of day with the highest number of injuries and how has their ranking changed over time?
 
 ```sql
 WITH TOP3_whole_range AS (
@@ -130,7 +130,7 @@ FROM Prev_period;
 ________________________________________
 
 
-# 4.Which time of day and day of the week combinations are most dangerous in terms of the number of injuries?
+## 4.Which time of day and day of the week combinations are most dangerous in terms of the number of injuries?
 
 ```sql
 WITH SUMIK AS (SELECT 
@@ -158,7 +158,7 @@ WHERE Ranks <=3;
 ________________________________________
 
 
-# 5.Which vehicle types are most often involved in accidents resulting in death or serious injury?
+## 5.Which vehicle types are most often involved in accidents resulting in death or serious injury?
 
 ```sql
 WITH Agregate AS (SELECT
@@ -188,7 +188,7 @@ SELECT
 ________________________________________
 
 
-# 6. Which party roles (driver, passenger, pedestrian) have the highest number of injured or killed in accidents?
+## 6. Which party roles (driver, passenger, pedestrian) have the highest number of injured or killed in accidents?
 
 ```sql
 WITH TopTotalInjuredPart AS (
@@ -233,7 +233,7 @@ FROM TopTotalInjuredPart;
 
 ________________________________________
 
-# 7. Which 10 specific dates had the highest number of accidents throughout the period analyzed?
+## 7. Which 10 specific dates had the highest number of accidents throughout the period analyzed?
 
 ```sql
 SELECT
@@ -252,7 +252,7 @@ LIMIT 10;
 
 ________________________________________
 
-# 8.How has the number of accidents involving drunk drivers changed over time?
+## 8.How has the number of accidents involving drunk drivers changed over time?
 
 ```sql
 WITH New_Sobriety AS (SELECT 
@@ -279,7 +279,7 @@ ORDER BY dc.Year_Of_Crash DESC;
 
 ________________________________________
 
-# 9.How many people were injured and how many died in accidents involving drunk drivers?Also provide the percentage of injured and killed victims in this group. Additionally, compare this to drivers who were sober.
+## 9.How many people were injured and how many died in accidents involving drunk drivers?Also provide the percentage of injured and killed victims in this group. Additionally, compare this to drivers who were sober.
 
 ```sql
 WITH New_Sobriety AS (SELECT 
@@ -331,7 +331,7 @@ FROM Killed_Injured_NotDrinking;
 
 ________________________________________
 
-# 10.For each type of collision (e.g., rear-end, head-on, side-swipe, etc.), calculate: 
+## 10.For each type of collision (e.g., rear-end, head-on, side-swipe, etc.), calculate: 
 **- The number of accidents,**
 **- The total number of injuries,**
 **- The total number of fatalities,**
@@ -385,7 +385,7 @@ LIMIT 3;
 ________________________________________
 
 
-# 11. Do younger drivers cause accidents with more victims? Divide drivers into age groups (e.g., <25, 25–40, 41–60, 60+) and check:
+## 11. Do younger drivers cause accidents with more victims? Divide drivers into age groups (e.g., <25, 25–40, 41–60, 60+) and check:
 
 **- How many accidents occurred in each group,**
 **- How many total injuries and fatalities there were,**
