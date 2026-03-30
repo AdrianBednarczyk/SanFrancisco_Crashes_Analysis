@@ -373,6 +373,7 @@ ________________________________________
 
 
 # 11. Do younger drivers cause accidents with more victims? Divide drivers into age groups (e.g., <25, 25–40, 41–60, 60+) and check:
+
 **- How many accidents occurred in each group,**
 **- How many total injuries and fatalities there were,**
 **- What was the average number of victims per accident in each group.
