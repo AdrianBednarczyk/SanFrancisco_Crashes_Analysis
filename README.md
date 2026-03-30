@@ -121,8 +121,7 @@ ________________________________________
 SanFrancisco_Crash_Accidents/
 │
 ├── SQL Queries/                       # List of Queries used during the work
-│   ├── Queries - BusinessAnalyticsResults.md /  # Queries used during simulation of real work on a database with business questions (with additional screenshoots)
-│   ├── Queries - Business Analytics/  # Queries used during simulation of real work on a database with business questions
+│   ├── Queries - BusinessAnalyticsResults.md/  # Queries used during simulation of real work on a database with business questions
 │   ├── Queries - Preparing Data/      # Queries used during simulation of real work related to creating tables, transforming data and preparing it for further analysis
 │
 └── README.md                          # Project overview and documentation
