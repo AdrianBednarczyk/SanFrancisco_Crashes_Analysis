@@ -1,4 +1,4 @@
-/** Some fast cases to solved to show skills in SQL **/
+# Below are business questions and their answers, including the most interesting database insights from the project. Each question includes an SQL query and a screenshot of the results. For better readability, please see the "Business Analytics Queries" section. It's not possible to add screenshots of SQL results to the SQL file.
 
 # 1. Does seat belt use affect the number of road accident casualties?
 
