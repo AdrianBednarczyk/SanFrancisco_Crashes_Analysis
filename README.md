@@ -1,6 +1,6 @@
 # **🚗 San Francisco Crash Accidents – Data Analysis Project**
 
-This project presents an end-to-end data analysis of traffic accidents in San Francisco using SQL and Power BI.It follows a full data analytics workflow, starting from raw data ingestion, through data cleaning and transformation in SQL, and ending with analytical reporting in Power BI.
+This project presents an end-to-end data analysis of traffic accidents in San Francisco using SQL and Power BI. It follows a full data analytics workflow, starting from raw data ingestion, through data cleaning, transformation and Inight Analysis in SQL, and ending with analytical reporting in Power BI.
 
 The dataset was first loaded into a SQL database from source files, where the entire data preparation process was performed. This included creating database tables, validating data integrity, and cleaning inconsistent or missing records.
 
@@ -8,7 +8,9 @@ The dataset was first loaded into a SQL database from source files, where the en
 
 After the data quality checks and transformations were completed, the cleaned and structured tables were used to build a dimensional data model that supports efficient analytical queries.
 
-**👉 Business-oriented analysis and key insights are presented in the Business Analytics section inside the SQL Queries folder.**
+**👉 Business-oriented analysis and key insights are documented in the BusinessAnalyticsResults.md file.**
+
+For better readability of the SQL code used in the analysis, all queries are also organized separately in the SQL Queries → Business Analytics section.
 
 The goal of the project was to analyze accident patterns, identify key risk factors, and demonstrate practical analytical skills required in a Data Analyst / BI Analyst role.
 
