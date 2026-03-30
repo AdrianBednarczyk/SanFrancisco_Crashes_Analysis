@@ -10,11 +10,7 @@ After the data quality checks and transformations were completed, the cleaned an
 
 **👉 Business-oriented analysis and key insights are documented in the BusinessAnalyticsResults.md file.**
 
-For better readability of the SQL code used in the analysis, all queries are also organized separately in the SQL Queries → Business Analytics section.
-
-The goal of the project was to analyze accident patterns, identify key risk factors, and demonstrate practical analytical skills required in a Data Analyst / BI Analyst role.
-
-The final output is a Gold-layer warehouse optimized for analytical consumption and a Power BI dashboard presenting the results.
+This document contains queries used to answer business questions as part of a data simulation. The file has been designed to make the SQL queries readable, and below it is a screenshot with key findings.
 
 ________________________________________
 
