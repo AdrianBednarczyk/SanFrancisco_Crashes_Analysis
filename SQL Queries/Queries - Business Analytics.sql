@@ -31,6 +31,9 @@ MAX(CASE WHEN victim_safety_equip_1 = 'Lap/Shoulder Harness Used'
     THEN Killed_Ratio END) AS Not_Used_Ratio
 FROM Safety_Stats;
 
+**RESULTS**
+
+
 /** 2. Which days of the week have the highest number of accidents and how their ranking changes from year to year **/
 SELECT
 year,
