@@ -33,7 +33,7 @@ FROM Safety_Stats;
 
 **RESULTS**
 
-<img width="1562" height="736" alt="Sample of Project" src="https://github.com/user-attachments/assets/1e72cf23-ffdc-4244-bb5a-d8f286adbe05" />
+
 	
 /** 2. Which days of the week have the highest number of accidents and how their ranking changes from year to year **/
 SELECT
