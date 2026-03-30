@@ -112,7 +112,7 @@ ________________________________________
 
 # 📥 Data Sources
 
-•	SanFraniscoCrashes: [Traffic Crashes Resulting_SanFrancisco](https://data.sfgov.org/Public-Safety/Traffic-Crashes-Resulting-in-Injury/ubvf-ztfx/about_data)
+•	SanFranciscoCrashes: [Traffic Crashes Resulting_SanFrancisco](https://data.sfgov.org/Public-Safety/Traffic-Crashes-Resulting-in-Injury/ubvf-ztfx/about_data)
 
 ________________________________________
 
