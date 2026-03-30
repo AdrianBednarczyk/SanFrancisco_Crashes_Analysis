@@ -4,7 +4,7 @@
 # 1. Does seat belt use affect the number of road accident casualties?
 
 **Analyze the data on casualties and determine whether seat belt 
-use reduces the severity of accidents. For each safety equipment category, calculate:**	
+use reduces the severity of accidents. For each safety equipment category, calculate:**
 **- the number of people involved in accidents**
 **- the total number of injuries**
 **- the total number of fatalities**
