@@ -142,8 +142,16 @@ END AS rank_diff
 FROM Prev_period;
 ```
 **SQL Results:**
+
 <img width="496" height="415" alt="image" src="https://github.com/user-attachments/assets/855ded92-4e24-464c-9709-25539903ef31" />
 
+**Conclusions:**
+
+The table shows that the hazard hierarchy is very stable, but subject to change.
+
+Afternoon: leader ("no change").
+
+Noon vs. Morning: This is where the greatest competition occurs. In 2022 and 2023, the two "changes" occurred, suggesting that the morning accident rate in those years approached the afternoon level.
 ________________________________________
 
 
