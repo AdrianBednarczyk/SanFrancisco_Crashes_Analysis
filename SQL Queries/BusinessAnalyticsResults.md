@@ -321,11 +321,11 @@ FROM Killed_Injured_NotDrinking;
 ________________________________________
 
 # 10.For each type of collision (e.g., rear-end, head-on, side-swipe, etc.), calculate: 
-# - The number of accidents,
-# - The total number of injuries,
-# - The total number of fatalities,
-# - The average number of casualties per accident.
-# Finally, list the three types of collisions with the highest average number of casualties.
+**- The number of accidents,**
+**- The total number of injuries,**
+**- The total number of fatalities,**
+**- The average number of casualties per accident.**
+**Finally, list the three types of collisions with the highest average number of casualties.**
 
 SELECT 
 	type_of_collision,
