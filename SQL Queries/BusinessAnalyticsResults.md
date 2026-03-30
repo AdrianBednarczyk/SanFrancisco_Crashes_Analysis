@@ -62,6 +62,8 @@ YEAR(dc.clean_date),DAYNAME(dc.clean_date)) tt
 WHERE Ranking =1
 ORDER BY year desc;
 ```
+
+**SQL Results:**
 <img width="352" height="411" alt="image" src="https://github.com/user-attachments/assets/4575de35-87d8-4a10-bb28-f3be87369892" />
 
 ________________________________________
@@ -124,7 +126,7 @@ CASE
 END AS rank_diff
 FROM Prev_period;
 ```
-
+**SQL Results:**
 <img width="496" height="415" alt="image" src="https://github.com/user-attachments/assets/855ded92-4e24-464c-9709-25539903ef31" />
 
 ________________________________________
@@ -152,7 +154,7 @@ SELECT *
 FROM Ranking
 WHERE Ranks <=3;
 ```
-
+**SQL Results:**
 <img width="252" height="91" alt="image" src="https://github.com/user-attachments/assets/59655609-045d-42ff-95a6-47e9e9b46c84" />
 
 ________________________________________
@@ -182,8 +184,8 @@ SELECT
     GROUP BY stwd_vehicle_type;
 ```
 
+**SQL Results:**
 <img width="352" height="341" alt="image" src="https://github.com/user-attachments/assets/13782049-b6af-4e00-a3b5-dca1335aaef9" />
-
 
 ________________________________________
 
@@ -227,7 +229,7 @@ SELECT
     'Injured' AS Statistic_Type
 FROM TopTotalInjuredPart;
 ```
-
+**SQL Results:**
 <img width="293" height="68" alt="image" src="https://github.com/user-attachments/assets/a0aa46fe-5436-40e9-97fb-b0ea1ddb070d" />
 
 
@@ -246,7 +248,7 @@ GROUP BY dd.date_day
 ORDER BY COUNT(DISTINCT dc.case_id_pkey) DESC, dd.date_day ASC
 LIMIT 10;
 ```
-
+**SQL Results:**
 <img width="237" height="242" alt="image" src="https://github.com/user-attachments/assets/e46af1f1-977d-4f68-9a70-e08e621aa646" />
 
 
@@ -275,6 +277,7 @@ GROUP BY dc.Year_Of_Crash,dns.New_party_sobriety
 ORDER BY dc.Year_Of_Crash DESC;
 ```
 
+**SQL Results:**
 <img width="403" height="371" alt="image" src="https://github.com/user-attachments/assets/37573883-7926-45a4-8f56-87906848b056" />
 
 ________________________________________
@@ -326,7 +329,7 @@ SELECT
     CONCAT(ROUND(Total_Killed/(Total_Injured+Total_Killed)*100,2),'%') AS Killed_Ratio
 FROM Killed_Injured_NotDrinking;
 ```
-
+**SQL Results:**
 <img width="573" height="67" alt="image" src="https://github.com/user-attachments/assets/96d640ab-a2e4-4f05-b221-b238e8a42138" />
 
 ________________________________________
@@ -380,7 +383,7 @@ GROUP BY dc.type_of_collision
 ORDER BY avg_victims_per_crash DESC
 LIMIT 3;
 ```
-
+**SQL Results:**
 <img width="612" height="93" alt="image" src="https://github.com/user-attachments/assets/d4914c79-b1b2-4ba6-a8d3-3774a2911ab2" />
 ________________________________________
 
@@ -439,7 +442,7 @@ GROUP BY
 ORDER BY
     avg_victims_per_crash DESC;
 ```
-	
+**SQL Results:**	
 <img width="662" height="135" alt="image" src="https://github.com/user-attachments/assets/21d089c6-5dd9-4f14-831c-34fb8f5490ac" />
 
 
