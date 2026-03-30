@@ -38,43 +38,6 @@ FROM Safety_Stats;
 
 <img width="292" height="57" alt="image" src="https://github.com/user-attachments/assets/e15e0623-4319-4b74-9f1a-caafb6298205" />
 
-# Business Questions and Insights
-
-Below are business questions and their answers, including the most interesting database insights from the project.
-
-> **Note:** Each question includes an SQL query and a screenshot of the results. For better readability, please see the "Business Analytics Queries" section. It's not possible to add screenshots of SQL results to the SQL file.
-
----
-
-## 1. Does seat belt use affect the number of road accident casualties?
-
-Analyze the data on casualties and determine whether seat belt use reduces the severity of accidents. For each safety equipment category, calculate:
-* The number of people involved in accidents
-* The total number of injuries
-* The total number of fatalities
-* The percentage of injuries
-* The percentage of fatalities
-
-**Comparison:**
-Then compare the results between the use of seat belts and the lack of seat belt use. Finally, indicate in which cases the lack of seat belt use most increases the risk of death in an accident.
-
-### SQL Query
-```sql
-WITH Safety_Stats AS (
-    SELECT 
-        COUNT(*) AS Participant, 
-        SUM(number_injured) AS Total_Injured, 
-        SUM(number_killed) AS Total_Killed, 
-        CONCAT(ROUND(SUM(number_injured)/NULLIF(COUNT(*),0)*100,2),'%') AS Injured_Ratio, 
-        CONCAT(ROUND(SUM(number_killed)/NULLIF(COUNT(*),0)*100,2),'%') AS Killed_Ratio, 
-        victim_safety_equip_1 
-    FROM dim_victims_final 
-    WHERE victim_safety_equip_1 = 'Lap/Shoulder Harness Not Used' 
-       OR victim_safety_equip_1 = 'Lap/Shoulder Harness Used' 
-    GROUP BY victim_safety_equip_1
-)
-SELECT * FROM Safety_Stats;
-
 ________________________________________
 
 
