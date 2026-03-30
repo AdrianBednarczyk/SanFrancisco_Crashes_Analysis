@@ -39,7 +39,9 @@ SELECT * FROM Safety_Stats;
 
 <img width="292" height="57" alt="image" src="https://github.com/user-attachments/assets/e15e0623-4319-4b74-9f1a-caafb6298205" />
 
+
 **Conlusions:**
+
 Although almost every participant in both groups sustains some type of injury (over 99% of those injured), the key difference lies in the mortality rate:
 
 Increased risk: The risk of death without a seat belt (0.73%) is over 10 times higher than with one (0.07%).
@@ -72,6 +74,13 @@ ORDER BY year desc;
 **SQL Results:**
 <img width="352" height="411" alt="image" src="https://github.com/user-attachments/assets/4575de35-87d8-4a10-bb28-f3be87369892" />
 
+**Conclusions:**
+
+Friday is the most recurring "top-ranked" day for accidents, especially in recent years. It held the #1 ranking in:
+
+Recent Period: 2024, 2025
+
+Friday appears to be the most consistently dangerous day, likely due to increased traffic volume from commuters returning home and people starting weekend travel.
 ________________________________________
 
 ## 3. What are the top 3 times of day with the highest number of injuries and how has their ranking changed over time?
