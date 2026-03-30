@@ -33,7 +33,7 @@ WITH Safety_Stats AS (
 )
 SELECT * FROM Safety_Stats;
 ```
-
+**SQL Results:**
 
 <img width="722" height="73" alt="Ekren screen " src="https://github.com/user-attachments/assets/b377c843-99e8-4e3e-9ef0-890816e61958" />
 
