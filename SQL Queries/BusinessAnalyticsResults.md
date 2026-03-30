@@ -227,8 +227,27 @@ SELECT
 ```
 
 **SQL Results:**
+
 <img width="352" height="341" alt="image" src="https://github.com/user-attachments/assets/13782049-b6af-4e00-a3b5-dca1335aaef9" />
 
+
+**Conclusions:**
+
+Most At-Risk Groups (Top 3)
+Pedestrian
+Serious injuries: 1,805
+Fatalities: 294
+Conclusion: This is by far the most vulnerable group. The number of pedestrian deaths is more than six times higher than the next highest group.
+
+Passenger Car
+Serious injuries: 1,202
+Fatalities: 49
+Conclusion: The second largest group. Although the number of serious injuries is very high, passengers are protected by the bodywork, which is reflected in the significantly lower number of fatalities (relative to pedestrians).
+
+Bicycle
+Serious injuries: 834
+Fatalities: 38
+Conclusion: Cyclists constitute the third group in terms of the frequency of serious injuries.
 ________________________________________
 
 
