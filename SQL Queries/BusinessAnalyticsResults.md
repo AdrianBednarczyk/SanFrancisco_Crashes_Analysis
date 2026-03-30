@@ -178,8 +178,26 @@ FROM Ranking
 WHERE Ranks <=3;
 ```
 **SQL Results:**
+
 <img width="252" height="91" alt="image" src="https://github.com/user-attachments/assets/59655609-045d-42ff-95a6-47e9e9b46c84" />
 
+**Conclusions:**
+
+Most Dangerous Combinations (Top 3)
+Afternoon & Wednesday
+Ranking: 1
+
+Statistically, this is the riskiest time on the roads. The accumulation of the afternoon rush hour in the middle of the week results in the highest number of injuries.
+
+Afternoon & Friday
+Ranking: 2
+
+Friday afternoon comes in second place. This is a particularly dangerous time due to the overlap between returning from work and weekend travel.
+
+Afternoon & Tuesday
+Ranking: 3
+
+Tuesday afternoons round out the podium for the most accident-prone combinations.
 ________________________________________
 
 
