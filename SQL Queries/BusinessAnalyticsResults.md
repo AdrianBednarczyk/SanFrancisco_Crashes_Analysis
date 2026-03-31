@@ -318,6 +318,9 @@ LIMIT 10;
 
 <img width="237" height="242" alt="image" src="https://github.com/user-attachments/assets/e46af1f1-977d-4f68-9a70-e08e621aa646" />
 
+**Conslucions:**
+
+The most tragic day on the list was December 28, 2018 (23 accidents). It's worth noting that many of the dates on this list fall in the fall and winter months (October, November, December, January, and February), which may suggest that harsher weather conditions or holiday periods impact road safety.
 
 ________________________________________
 
