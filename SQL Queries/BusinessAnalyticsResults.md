@@ -408,14 +408,19 @@ FROM Killed_Injured_NotDrinking;
 
 <img width="573" height="67" alt="image" src="https://github.com/user-attachments/assets/96d640ab-a2e4-4f05-b221-b238e8a42138" />
 
+**Conclusions:**
+
+Increased risk of death: The risk of death in a crash involving an intoxicated driver (0.62%) is almost eight times higher than for a sober driver (0.08%).
+
+Numerical disparity: Although the overall number of crashes involving sober drivers is significantly higher (over 42,000 injuries), alcohol makes these accidents much more tragic.
 ________________________________________
 
 ## 10.For each type of collision (e.g., rear-end, head-on, side-swipe, etc.), calculate: 
-**- The number of accidents,**
-**- The total number of injuries,**
-**- The total number of fatalities,**
-**- The average number of casualties per accident.**
-**Finally, list the three types of collisions with the highest average number of casualties.**
+* The number of accidents
+* The total number of injuries
+* The total number of fatalities
+* The average number of casualties per accident
+Finally, list the three types of collisions with the highest average number of casualties.
 
 ```sql
 SELECT 
@@ -467,10 +472,10 @@ ________________________________________
 
 ## 11. Do younger drivers cause accidents with more victims? Divide drivers into age groups (e.g., <25, 25–40, 41–60, 60+) and check:
 
-**- How many accidents occurred in each group,**
-**- How many total injuries and fatalities there were,**
-**- What was the average number of victims per accident in each group.
-Additionally, check whether the results differ between: male drivers and female drivers.**
+* How many accidents occurred in each group
+* How many total injuries and fatalities there were
+* What was the average number of victims per accident in each group
+Additionally, check whether the results differ between: male drivers and female drivers.
 
 ```sql
 WITH victims_per_crash AS (
