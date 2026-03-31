@@ -467,7 +467,13 @@ LIMIT 3;
 **SQL Results:**
 
 <img width="612" height="93" alt="image" src="https://github.com/user-attachments/assets/d4914c79-b1b2-4ba6-a8d3-3774a2911ab2" />
-________________________________________
+
+**Conclusions:**
+
+High fatality rate of frontal collisions: Although there are almost three times fewer head-on collisions than rear-end collisions, they result in more fatalities (23 vs. 20), which indicates their greater impact.
+
+Dominance of side impacts: Broadside collisions are by far the most common (almost 20,000 events) and generate the largest number of fatalities (72) and injuries (over 26,000).
+________________________________
 
 
 ## 11. Do younger drivers cause accidents with more victims? Divide drivers into age groups (e.g., <25, 25–40, 41–60, 60+) and check:
