@@ -294,6 +294,10 @@ FROM TopTotalInjuredPart;
 
 <img width="293" height="68" alt="image" src="https://github.com/user-attachments/assets/a0aa46fe-5436-40e9-97fb-b0ea1ddb070d" />
 
+**Conclusions:**
+Most Injured: Drivers. Because every vehicle has at least one driver, statistically they are most likely to be involved in accidents involving injuries.
+
+Highest Fatality Rate (Killed): Pedestrians. Data shows that pedestrians are the most risky in terms of fatal accidents (confirmed by data on 294 fatalities, which is the dominant figure in fatality statistics).
 
 ________________________________________
 
