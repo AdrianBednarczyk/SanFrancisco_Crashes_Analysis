@@ -351,6 +351,10 @@ ORDER BY dc.Year_Of_Crash DESC;
 
 <img width="403" height="371" alt="image" src="https://github.com/user-attachments/assets/37573883-7926-45a4-8f56-87906848b056" />
 
+**Conclusions:**
+
+A clear downward trend (2023–2025): Over the past three years, we have observed a steady decline in the number of accidents caused by drinking. The number of incidents decreased from 163 (in 2023) to 129 (in 2025), which is similar to the level in 2020.
+
 ________________________________________
 
 ## 9.How many people were injured and how many died in accidents involving drunk drivers?Also provide the percentage of injured and killed victims in this group. Additionally, compare this to drivers who were sober.
